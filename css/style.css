@@ -619,6 +619,25 @@ section.counter-wrapper img {
         z-index: 999;
         width: 100%;
     }
+    .bubble {
+      position: fixed;
+      bottom: 40px;
+      right: 30px;
+      display: flex;
+      flex-direction: column;
+      /* top: 0; */
+      margin: auto;
+      justify-content: center;
+      align-items: flex-end;
+      z-index: 99;
+    }
+    body {
+      overflow-x: hidden;
+    }
+    .bubble img {
+      animation: hithere 2s ease infinite;
+      width: 60px;
+  }
     .last{
       padding-top: 0px !important;
   }
@@ -951,4 +970,16 @@ ul.footer-social li:hover {
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+
+
+.dropdown .dropdown-menu {
+  display: none;
+}
+.dropdown:hover > .dropdown-menu,
+.drops:hover > .dropdown-menu {
+  display: block;
+  margin-top: 0.125em;
+  margin-left: 0.125em;
 }
