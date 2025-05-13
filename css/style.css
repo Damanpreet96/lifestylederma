@@ -220,6 +220,14 @@ h2 {
     margin: 10px;
     border-radius: 6px;
     padding: 9px;
+    height: 370px;
+}
+.item-details.text-center h6 {
+    text-align: left;
+}
+.item-details.text-center {
+    display: flex;
+    padding-top: 19px;
 }
 
 
