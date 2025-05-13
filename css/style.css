@@ -627,6 +627,13 @@ section.counter-wrapper img {
         z-index: 999;
         width: 100%;
     }
+    .shadow-effect {
+    box-shadow: 0 0 2px 0px #00000038;
+    margin: 10px;
+    border-radius: 6px;
+    padding: 9px;
+    height: auto !important;
+}
     .bubble {
       position: fixed;
       bottom: 40px;
@@ -990,4 +997,8 @@ ul.footer-social li:hover {
   display: block;
   margin-top: 0.125em;
   margin-left: 0.125em;
+}
+
+.owl-dots {
+    display: none;
 }
