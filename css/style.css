@@ -221,6 +221,7 @@ h2 {
     border-radius: 6px;
     padding: 9px;
     height: 370px;
+    overflow: hidden;
 }
 .item-details.text-center h6 {
     text-align: left;
@@ -627,12 +628,18 @@ section.counter-wrapper img {
         z-index: 999;
         width: 100%;
     }
+    #icon-list .card {
+    padding: 10px;
+    /* margin: 0.5px; */
+    height: auto !important;
+}
     .shadow-effect {
     box-shadow: 0 0 2px 0px #00000038;
     margin: 10px;
     border-radius: 6px;
     padding: 9px;
     height: auto !important;
+    overflow: hidden;
 }
     .bubble {
       position: fixed;
@@ -841,7 +848,9 @@ section.counter-wrapper img {
   /* Card spacing */
   #icon-list .card {
     padding: 10px;
-    margin: 0.5;
+    margin: 0.5px;
+    height: 270px;
+
   }
   
   /* Custom nav buttons for Owl Carousel */
@@ -1001,4 +1010,106 @@ ul.footer-social li:hover {
 
 .owl-dots {
     display: none;
+}
+.hover-img-wrapper img {
+    border-radius: 5px !important;
+}
+#wrap {    
+    text-align: left;
+}
+
+.btn-slide, .btn-slide2 {
+    position: relative;
+    display: inline-block;
+    height: 50px;
+    width: 250px;
+    line-height: 50px;
+    padding: 0;
+    border-radius: 50px;
+    background: #fdfdfd;
+    border: 2px solid #0099cc;
+    margin: 10px;
+    transition: .5s;
+}
+
+.btn-slide2 {
+    border: 2px solid#0556a5;
+}
+
+.btn-slide2:hover {
+    background-color: #be3798;
+    border: none;
+}
+
+.btn-slide:hover span.circle, .btn-slide2:hover span.circle2 {
+    left: 100%;
+    margin-left: -45px;
+    background-color: #fdfdfd;
+    color: #0099cc;
+}
+
+.btn-slide2:hover span.circle2 {
+    color: #be3798;
+}
+
+ .btn-slide2:hover span.title2 {
+    left: 40px;
+    opacity: 0;
+}
+
+ .btn-slide2:hover span.title-hover2 {
+    opacity: 1;
+    left: 40px;
+}
+
+ .btn-slide2 span.circle2 {
+    display: block;
+    background-color: #0099cc;
+    color: #fff;
+    position: absolute;
+    float: left;
+    margin: 5px;
+    line-height: 42px;
+    height: 40px;
+    width: 40px;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.btn-slide2 span.circle2 {
+    background-color: #0556a5;
+}
+
+.btn-slide span.title, .btn-slide span.title-hover, .btn-slide2 span.title2, .btn-slide2 span.title-hover2 {
+    position: absolute;
+    left: 60px !important;
+    text-align: left;
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #30abd5;
+    transition: .5s;
+    width: 100%;
+}
+
+.btn-slide2 span.title2,
+  .btn-slide2 span.title-hover2 {
+    color: #0556a5;
+    left: 80px;
+  }
+
+ .btn-slide2 span.title-hover2 {
+    left: 80px;
+    opacity: 0;
+}
+
+ .btn-slide2 span.title-hover2 {
+    color: #fff;
+}
+.hover-img-wrapper img:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
 }
