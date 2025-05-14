@@ -947,6 +947,7 @@ ul.footer-social li:hover {
     max-width: 100%;
     margin: 0 auto 15px;
     display: block;
+    width: 280px;
   }
   
   .category-title {
