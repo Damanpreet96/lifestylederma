@@ -1,6 +1,9 @@
 body {
     font-family: "BrandonGrotesque-WebMedium", sans-serif;
 }
+body, html {
+    overflow-x: hidden;
+}
 
 
 /* header */
@@ -614,9 +617,14 @@ section.counter-wrapper img {
     }
     .container-fluid.py-2 {
         padding: 40px 0 !important;
-        margin-top: 40px;
-        background-color: #ECF5F7;
+        margin-top: 40px;       
     }
+    .TEST h2.headings.text-center {    
+    padding-top: 50px;
+}
+section.TEST {
+    margin: 80px 0 25px 0;
+}
    
 }
 @media (max-width:767px) {
@@ -628,6 +636,18 @@ section.counter-wrapper img {
         z-index: 999;
         width: 100%;
     }
+section.TEST {
+   
+    background-image: url(image/bg.png) !IMPORTANT;
+    background-repeat: no-repeat !important;
+    background-size: auto !important;
+    background-attachment: scroll;    
+    padding-bottom: 40px;
+}
+.TEST h2.headings.text-center {
+    color: #fff;
+    padding: 25px 0 10px 0;
+}
     #icon-list .card {
     padding: 10px;
     /* margin: 0.5px; */
@@ -786,9 +806,7 @@ section.counter-wrapper img {
         width: 150px;
     }
 }
-.container-fluid.py-2 {   
-    background-color: #ECF5F7;
-}
+
 
 /* review area */
 
@@ -808,13 +826,13 @@ section.counter-wrapper img {
   
   /* Owl Carousel responsive layout */
   @media screen and (min-width: 576px) {
-    #icon-list {
-      display: flex;
-      width: 90%;
-      margin-inline: auto;
-      padding: 1em 0;
-      overflow: hidden;
-    }
+ #icon-list {
+    display: flex;
+    width: 90%;
+    margin-inline: auto;
+    padding: 1em 0 5em 0;
+    overflow: hidden;
+}
   
     #icon-list .item {
       display: block;
@@ -1014,11 +1032,11 @@ ul.footer-social li:hover {
 .hover-img-wrapper img {
     border-radius: 5px !important;
 }
-#wrap {    
+#button-div {    
     text-align: left;
 }
 
-.btn-slide, .btn-slide2 {
+ .btn-two {
     position: relative;
     display: inline-block;
     height: 50px;
@@ -1032,37 +1050,37 @@ ul.footer-social li:hover {
     transition: .5s;
 }
 
-.btn-slide2 {
+.btn-two {
     border: 2px solid#0556a5;
 }
 
-.btn-slide2:hover {
+.btn-two:hover {
     background-color: #be3798;
     border: none;
 }
 
-.btn-slide:hover span.circle, .btn-slide2:hover span.circle2 {
+.btn-slide:hover span.circle, .btn-two:hover span.circle2 {
     left: 100%;
     margin-left: -45px;
     background-color: #fdfdfd;
     color: #0099cc;
 }
 
-.btn-slide2:hover span.circle2 {
+.btn-two:hover span.circle2 {
     color: #be3798;
 }
 
- .btn-slide2:hover span.title2 {
+ .btn-two:hover span.btn-title {
     left: 40px;
     opacity: 0;
 }
 
- .btn-slide2:hover span.title-hover2 {
+ .btn-two:hover span.title-hover2 {
     opacity: 1;
     left: 40px;
 }
 
- .btn-slide2 span.circle2 {
+ .btn-two span.circle2 {
     display: block;
     background-color: #0099cc;
     color: #fff;
@@ -1079,11 +1097,11 @@ ul.footer-social li:hover {
     text-align: center;
 }
 
-.btn-slide2 span.circle2 {
+.btn-two span.circle2 {
     background-color: #0556a5;
 }
 
-.btn-slide span.title, .btn-slide span.title-hover, .btn-slide2 span.title2, .btn-slide2 span.title-hover2 {
+.btn-slide span.title, .btn-slide span.title-hover, .btn-two span.btn-title, .btn-two span.title-hover2 {
     position: absolute;
     left: 60px !important;
     text-align: left;
@@ -1095,21 +1113,33 @@ ul.footer-social li:hover {
     width: 100%;
 }
 
-.btn-slide2 span.title2,
-  .btn-slide2 span.title-hover2 {
+.btn-two span.btn-title,
+  .btn-two span.title-hover2 {
     color: #0556a5;
     left: 80px;
   }
 
- .btn-slide2 span.title-hover2 {
+ .btn-two span.title-hover2 {
     left: 80px;
     opacity: 0;
 }
 
- .btn-slide2 span.title-hover2 {
+ .btn-two span.title-hover2 {
     color: #fff;
 }
 .hover-img-wrapper img:hover {
     transform: scale(1.1);
     transition: 0.2s;
 }
+section.TEST {
+    /* background-color: #ECF5F7; */
+    background-image: url(image/bg.png) !IMPORTANT;
+    background-repeat: round;
+    background-size: contain;
+    background-attachment: scroll;
+    /* HEIGHT: 100%; */
+}
+.TEST h2.headings.text-center {
+    color: #fff;
+}
+
